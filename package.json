@@ -34,6 +34,7 @@
     "dev:mock": "cross-env PET_MOCK=mock parcel src/index.html",
     "format": "prettier --write \"src/**/*.{js,jsx,tsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "typecheck": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
