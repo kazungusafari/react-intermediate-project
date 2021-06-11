@@ -2,7 +2,7 @@ import React, { FunctionComponent } from "react";
 import { Link } from "@reach/router";
 import { Photo } from "@frontendmasters/pet";
 
-interface IProps {
+type PetProps {
   name: string;
   animal: string;
   breed: string;
@@ -11,7 +11,7 @@ interface IProps {
   id: number;
 }
 
-const Pet: FunctionComponent<IProps> = props => {
+const Pet = (props : PetProps) => {
   const { name, animal, breed, media, location, id } = props;
 
   let hero = "http://placecorgi.com/300/300";
